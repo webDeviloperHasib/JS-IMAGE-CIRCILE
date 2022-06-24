@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    .mylove{
+        position: absolute;
+        
+        width: 450px;
+        left: 800px;
+        top: 60px;
+        h1{
+            font-size: 30px;
+            color: white;
+        }
+        h4{
+            color: hotpink;
+            font-size: 40px;
+            margin-top: 18px;
+            span{
+                color: lime;
+            }
+        }
+    }
+    width: 100%;
+    background:linear-gradient(to right,violet,navy,hotpink);
+    position: relative;
+    overflow: hidden;
+
+    .overlay{
+        img{
+            margin-top: -200px;
+            width: 220px;
+            height: 500px;
+            margin-left: -220px;
+        }
+        width: 0;
+       
+        height: 0;
+        border-top: 321px solid wheat;
+        border-bottom: 321px solid wheat;
+        border-left: 350px solid wheat;
+        border-right: 350px solid transparent;
+        z-index: 1;
+        position: absolute;
+    }
+    .circle{
+   
+        .fitured
+        { display: flex;
+            img{
+                width: 190px;
+                height: 190px;
+            }
+        } 
+        width: 640px;
+        height: 640px;
+        border-radius: 50%;
+        left: 60px;
+        top:20px;
+        position: relative;
+        color: wheat;
+        font-weight: 800;
+        font-size: 30px;
+        transform: rotate(0deg);
+        transition: 1s;
+      
+        .one{
+            position: absolute;
+            top: 250px;
+            // left:490px;
+            right: -65px;
+        }
+        .two{
+            position: absolute;
+            top: -50px;
+            left:200px;
+            transform: rotate(-90deg);
+           
+        }
+        .three{
+            position: absolute;
+            top: 316px;
+            left:-57px;
+            transform: rotate(180deg);
+            
+        }
+        .four{
+            position: absolute;
+            top: 540px;
+            transform: rotate(90deg);
+            left: 287px;
+        }
+        
+    }
+
+    .btn-div{
+        position: absolute;
+        top: 34%;
+        right: 50px;
+
+        .btnup{
+            font-size: 40px;
+            background:none;
+            font-weight: 900;
+            padding: 10px;
+            border: none;
+            padding: 0;
+            color: white;
+            transform: rotate(-90deg);
+            cursor: pointer;
+        }
+        .btndown{
+            font-size: 40px;
+            font-weight: 900;
+            background:none;
+            border: none;
+            padding: 10px;
+            color: white;
+            transform: rotate(90deg);
+            cursor: pointer;
+        }
+        h3{
+           
+            color: lime;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            font-size: 40px;
+        }
+    }
+}
+

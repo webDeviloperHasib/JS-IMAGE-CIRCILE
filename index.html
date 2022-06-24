@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+      <div class="main">
+        <div class="mylove">
+            <h1>I am Freelancer Hasib</h1>
+            <h4>I Like <span class="hero"> </span></h4>
+        </div>
+        <div class="overlay"><img src="./image/3-removebg-preview.png" alt=""></div>
+        <div class="circle" id="circle">
+            <div id="one" class="one fitured"><img src="./image/tamil-removebg-preview.png" alt=""></div>
+            <div id="two" class="two fitured"><img src="./image/porimoni-removebg-preview.png" alt=""></div>
+            <div id="three" class="three fitured"><img src="./image/Mahiya-Mahi-removebg-preview.png" alt=""></div>
+            <div id="four" class="four fitured"><img src="./image/bubli-removebg-preview.png" alt=""></div>
+        </div>
+
+        <div class="btn-div">
+            <button type="button" id="btnup" class="btnup">></button>
+            <h3 id="btntext">PLZ Click Up or Down</h3>
+            <button type="button" id="btndown" class="btndown">></button>
+        </div>
+      </div>
+   
+
+      <script>
+           var one = document.getElementById('one');
+           var two = document.getElementById('two');
+           var three = document.getElementById('three');
+           var four = document.getElementById('four');
+           var circle = document.getElementById('circle');
+           var btnup = document.getElementById('btnup');
+           var btndown = document.getElementById('btndown');
+           var btntext = document.getElementById('btntext');
+
+           var onecolor = circle.style.transform;
+           var onecolorchange;
+
+           btnup.onclick = function() {
+              onecolorchange = onecolor + "rotate(-90deg)";
+              circle.style.transform = onecolorchange;
+              onecolor = onecolorchange;
+           }
+           btndown.onclick = function() {
+              onecolorchange = onecolor + "rotate(90deg)";
+              circle.style.transform = onecolorchange;
+              onecolor = onecolorchange;
+           };
+            
+
+           var type1 = new Typed('.hero', {
+             strings : ["Mahia Mahi", "Beautiful Bubli", "Dhakaia Porimoni", "Koal Mollik", "Suvossri Didi","Tamil Heroine"],
+             typeSpeed : 200,
+             backSpeed : 200,
+             loop : true
+           });
+      </script>
+</body>
+</html>
